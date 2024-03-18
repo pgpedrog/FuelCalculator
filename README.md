@@ -2,14 +2,15 @@
 
 Fuel calculator é um aplicativo criado para voce calcular o quanto vai gastar em sua viagem de carro, ele tambem divide o valor gasto referente ao numero de passageiros e quantos litros voce ira usar na viagem total.
 
-#Tecnologias
+## Tecnologias
 
 * Kotlin
 * ViewMode
 * Components de UI
-* BottonNavView
+* CardView
 * SplashScreen
 * Intent e Activity
+  
 ![Screenshot_20240318_180448](https://github.com/pgpedrog/FuelCalculator/assets/141691120/95e020cc-6184-4289-b991-6291300d0229)
 ![Screenshot_20240318_180501](https://github.com/pgpedrog/FuelCalculator/assets/141691120/ccef11ef-bd5f-4d7d-88f8-9b886de023a7)
 ![Screenshot_20240318_180537](https://github.com/pgpedrog/FuelCalculator/assets/141691120/82cd56f6-fac0-4a63-bf60-624a3f141f1c)
