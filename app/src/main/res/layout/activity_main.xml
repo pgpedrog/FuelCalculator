@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?><!-- res/layout/activity_main.xml -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_Calculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16sp"
+        android:backgroundTint="@color/btn_color"
+        android:text="Calculate"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/cv_bg"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Trip Distance (km)"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/edt_Distance"
+            android:layout_width="200dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="30dp"
+            android:autofillHints=""
+            android:background="@android:color/transparent"
+            android:drawableStart="@drawable/map_fill0_wght400_grad0_opsz24"
+            android:drawablePadding="10dp"
+            android:hint=" Ex.: 500"
+            android:inputType="numberDecimal"
+            android:maxLength="6"
+            android:textColor="@color/black"
+            android:textColorHint="#9C9EB7"
+            app:hintEnabled="true" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="20dp"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="@color/cv_bg"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Fuel Efficiency"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/edt_FuelConsumption"
+            android:layout_width="200dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="30dp"
+            android:autofillHints=""
+            android:background="@android:color/transparent"
+            android:drawableStart="@drawable/local_fire_department_fill0_wght400_grad0_opsz24"
+            android:drawablePadding="10dp"
+            android:hint=" Ex.: 10"
+            android:inputType="numberDecimal"
+            android:maxLength="6"
+            android:textColor="@color/black"
+            android:textColorHint="#9C9EB7"
+            app:hintEnabled="false" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="20dp"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="@color/cv_bg"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Gas/Fuel Price ($)"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/edt_FuelPrice"
+            android:layout_width="200dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="30dp"
+            android:autofillHints=""
+            android:background="@android:color/transparent"
+            android:drawableStart="@drawable/monetization_on_fill0_wght400_grad0_opsz24"
+            android:drawablePadding="10dp"
+            android:hint="Ex.: 3"
+            android:inputType="numberDecimal"
+            android:maxLength="6"
+            android:textColor="@color/black"
+            android:textColorHint="#9C9EB7"
+            app:hintEnabled="false" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView4"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/cv_bg"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView3">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Number Of Passengers"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/edt_Passengers"
+            android:layout_width="200dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="30dp"
+            android:autofillHints=""
+            android:background="@android:color/transparent"
+            android:drawableStart="@drawable/groups_fill0_wght400_grad0_opsz24"
+            android:drawablePadding="10dp"
+            android:hint="Ex.: 5"
+            android:inputType="numberDecimal"
+            android:maxLength="6"
+            android:textColor="@color/black"
+            android:textColorHint="#9C9EB7"
+            app:hintEnabled="false" />
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
