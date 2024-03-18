@@ -5,7 +5,6 @@ Fuel calculator é um aplicativo criado para voce calcular o quanto vai gastar e
 ## Tecnologias
 
 * Kotlin
-* ViewMode
 * Components de UI
 * CardView
 * SplashScreen
